@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<title>Pencegahan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  background-color: lightgrey;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image:url("Images/2.png");
+  min-height: 60%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Header with image -->
+ <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+</style>
+<body>
+
+<!-- About Container -->
+<div class="w3-container" id="Exploration">
+  <div class="w3-content" style="max-width:700px">
+    <div style="text-align: center;"></div>
+
+<div class="w3-large">
+<div style="text-indent: 0.5in; text-align: justify;">
+<p>Langkah-langkah pencegahan infeksi <b>Mers-CoV </b>yaitu,  sebagai berikut : </p>
+</div>
+</div>
+
+<div class="w3-large">
+<ol>  
+    <li>Menggunakan masker jika sakit atau sedang berada di keramaian, serta bagi Jemaah Haji dan Umroh.</li>
+    <li>Menjaga kebersihan dengan sering mencuci tangan menggunakan sabun dan air bersih yang mengalir.</li>
+    <li>Istirahat secukupnya, disertai dengan asupan gizi yang baik.</li>
+    <li>Mengkonsumsi makanan dan minuman yang diolah dengan baik dan benar.</li>
+    <li>Tidak menyentuh bagian wajah seperti : mata, hidung dan mulut dengan tangan yang belum dibersihkan.</li>
+    <li>Membatasi kontak dengan kasus yang sedang diselidiki dan bila tak terhindarkan buat jarak dengan kasus. </li>
+    <li>Menerapkan etika batuk ketika sakit.</li>
+    <li>Menyampaikan komunikasi, informasi, dan edukasi pada masyarakat.</li>
+    <li>Meningkatkan kesadaran tentang Mers-CoV dikalangan wisatawan dan ke negara-negara yang terkena dampak sebagai praktek kesehatan masyarakat yang baik.</li>
+    <li>Menghindari kontak erat dengan penderita/hewan penular.</li>
+
+  </ol>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-lightgrey w3-padding-48 w3-medium">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Created by Alfauzan Azhar</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

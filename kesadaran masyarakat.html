@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">KESADARAN MASYARAKAT TERHADAP VIRUS MERS</h2>
+    <p class="w3-opacity"><i>Health is our priority</i></p>
+    <p class="w3-justify"> Mers adalah salah satu wabah penyakit yang telah memakan korban sebanyak lebih dari 200.000 jiwa di seluruh dunia. Wabah penyakit ini disebabkan oleh infeksi kuman <i> Middle East Respiratory Syndrome Coronavirus </i> (MERS-CoV). 
+      
+        <p class="w3-justify"> Virus tersebut telah diteliti dapat menular melalui udara <i> (airborne infectious disease) </i> yang berarti penularan terjadi akibat bersin, batuk, dan kontak dengan selaput lendir (mukosa) dari penderita atau sumber infeksi ke orang yang tidak terinfeksi.
+        <p class="w3-justify">Upaya yang bisa dilakukan masyarakat umum untuk perkembangan wabah penyakit ini, antara lain memakai alat pelindung diri (APD), vaksinasi, menjaga kebersihan, serta menjalankan pola hidup sehat dan gizi seimbang. 
+        <p class="w3-justify">Penyakit menular pada prinsipnya adalah kemampuan daya tahan tubuh terhadap virus yang hinggap. Penurunan daya tahan tubuh menyebabkan manusia rentan terhadap penularan dan menyebabkan sakit. Hal-hal yang mempengaruhi daya tahan tubuh, antara lain status gizi yang baik, kebugaran, keadaan lingkungan sekitar yang baik, dan kebersihan yang baik.
+        <p class="w3-justify">Masyarakat juga harus menerapkan pola hidup bersih dan sehat. Karena pola hidup bersih dan sehat adalah yang utama dalam mencegah penyakit menular. Hal ini dapat dimulai dengan langkah sederhana, seperti mencuci tangan dengan sabun dan air mengalir setiap kali melakukan kegiatan yang berhubungan dengan diri sendiri, misalnya sebelum dan sesudah menyeka bagian tubuh yang mengandung selaput mukosa (mata, hidung, mulut).
+        <p class="w3-justify">Masyarakat juga perlu melakukan vaksinasi. Vaksinasi diperlukan untuk mencegah penularan dan penyebaran virus, walaupun vaksin untuk coronavirus belum tersedia. Vaksin dapat membantu tubuh mencegah penyakit menular lainnya yang memperberat penyakit menular melalui udara.</p>
+    <div class="w3-row w3-padding-32">
+      
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">YUK TINGKATKAN KESADARAN!!</h2>
+      <p class="w3-opacity w3-center"><i>Masyarakat harus menerapkan...</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="Images/gizi.jpg" alt="sehat" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>4 Sehat 5 Sempurna</b></p>
+            <p>Dengan pola hidup yang sehat dan bergizi dan kita dapat memperkuat daya tahan tubuh sehingga dapat melawan virus.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="Images/vaksinasi.jpg" alt="vaksinasi" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Vaksinasi</b></p>
+            <p>Karena vaksin dapat memberikan tubuh Anda pertahanan dan perlindungan dari berbagai penyakit infeksi yang berbahaya.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="Images/gotong royong.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Menjaga kebersihan Lingkungan</b></p>
+            <p>Lingkungan yang bersih akan menghindarkan kita dari berbagai macam penyakit!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Created by Risma Syahrani</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
